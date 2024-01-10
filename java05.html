@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="java">
+        //변수선언
+
+        var array = [237 , "korea", true , function(){} ,{}, [200,300]]
+        console.log(array);
+        
+
+        var array1 = [25,85,79,65,95];
+        console.log(array1[0]);
+        console.log(array1[2]);
+        console.log(array1[4]);
+
+        var arrayA = [0,1,2,3];
+        var arrayB = [0,1,2,3,4,5,6]
+
+        console.log("length of A : " + arrayA.length);
+        console.log("length of B : " + arrayB.length);
+
+        var arrayC = [0,1];
+        
+        console.log("length of C : " + arrayC.length);
+
+        arrayC.push(2);
+        arrayC.push(3);
+        arrayC.push(4);
+
+        console.log("arrayC : " + arrayC)
+        console.log("length of C : " + arrayC.length);
+
+        arrayC.pop();//배열 마지막 요소 제거
+        console.log("arrayC : " + arrayC);
+
+        arrayC.pop();//배열 마지막 요소 제거
+        console.log("arrayC : " + arrayC);
+
+
+        arrayC.shift() // 배열의 첫번째 요소 제거
+        console.log("arrayC : " + arrayC);
+
+        arrayC.unshift("new")
+        console.log("arrayC : " + arrayC);
+
+        var arrayD = [1,5,7]
+
+        // arrayD.splice(start, deleteCount, el)
+        // start - 수정할 배열요소의 인덱스 번호
+        // deleteCount- 삭제할 요소 개수, 저거하지 않을 경우 0
+        // el - 배열에 추가될 요소
+
+        console.log("arrayC : " + arrayD);
+        
+        arrayD.splice(1,0, 2,3,4)
+        console.log("arrayC : " + arrayD); // 1 2 3 4 5 7
+
+        arrayD.splice(1,2)
+        console.log("arrayC : " + arrayD); //1
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

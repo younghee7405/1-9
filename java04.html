@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="java">
+        //변수 선업
+        var array = ["포도","사과","바나나","딸기"];
+
+        // for( var i = 0 ;i < array.length ; i++ ){
+        //     document.write(array[i] + "<br>")
+        // }
+
+        // for(var j= array.length-1 ; j>=0; j-- ){
+        //     document.write(array[j] + "<br>")
+        // }
+
+        // var startTime = new Date().getTime()
+        // console.log(startTime);
+        // for (var cps = 0 ; new Date().getTime() < startTime + 1000 ; cps++ ){
+        //     console.log("1초당 연산횟수 : " + cps)
+
+        // }
+
+        // for(var i in array){
+        //     document.write(array[i] +"<br>")
+        // }
+
+        // for(var i = 0 ; true ; i++){
+        //     document.write(i + "번째를 반복합니다");
+
+        //     if( !confirm("계속하시겠습니까") ){
+        //         break;
+        //     }
+        // }
+        // document.write("프로그램 종료")
+
+        var output =0 ;
+        for(var i = 1; i<=10 ; i++){
+
+            if(i % 2 == 1){
+                continue;
+            }
+            output += i;
+
+        }
+        document.write(output);
+        var array1 = [1,2,3,4];
+        for(var i  in array1){
+            console.log(array1[i])
+        }
+
+        for(const element of[5,6,7,8]){
+            console.log(`요소는 ${element}입니다`)
+        }
+
+        // 1~100까지 합을 구하는 프로그램 만들기
+        // 입력받은 두로 합구하기
+
+        var num1= Number(prompt("숫자1일 입력하세요"))
+        var num2= Number(prompt("숫자2일 입력하세요"))
+        var hap = 0;
+
+        for(var i = num1 ; i <=num2 ; i++){            
+            hap = hap + i;
+        }
+
+        document.write("합은 " + hap);
+
+        
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

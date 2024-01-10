@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="java">
+        
+        // var output = "안녕하세요".indexOf("하세요");
+        // console.log(output)
+
+        var email = prompt("이메일을 입력하세요");
+        var i_email = email.indexOf("@");
+            
+        if( i_email >=5){
+            document.write("바른 형식입니다")
+        }else if(i_email >=0){
+            document.write("5글자 이상 입력하십시요")
+        }else{
+            document.write("메일 형식이 아님니다")
+        }
+
+
+    </script>
+</head>
+<body>   
+    
+</body>
+</html>

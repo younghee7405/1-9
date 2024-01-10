@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style type="text/css">
+        .box {
+            width: 600px;
+            height: 400px;
+            border: 10px double palevioletred;
+            margin: 100px auto;
+        }
+    </style>
+  </head>
+
+<body>
+
+    <div class="box">
+        <img  id="ani_img" src="img/animal01.png" alt="animal" class="ani_img" >
+        
+        <a href="naver.com" id="abc"></a>
+
+    </div>
+
+    <script lang="java">
+        var img_array = ["img/animal01.png", "img/animal02.png", "img/animal03.png", "img/animal04.png",
+            "img/animal05.png", "img/animal06.png", "img/animal07.png", "img/animal08.png", "img/animal09.png",
+            "img/animal10.png", "img/animal11.png" , "img/animal12.png"];
+
+        var img_path = document.querySelector(".ani_img").getAttribute("src");
+    
+        console.log(img_path);
+
+        var jjjj = document.getElementById("abc").getAttribute("href")
+        document.write(jjjj)
+
+        
+    </script>
+
+</body>
+
+</html>
